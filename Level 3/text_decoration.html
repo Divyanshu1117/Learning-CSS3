@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Decoration Example</title>
+    <style type="text/css">
+        #head {
+            background-color: yellowgreen;
+            text-decoration: none;
+
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .line-through {
+            text-decoration: line-through;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .overline {
+            text-decoration: overline;
+        }
+
+        .underline-overline {
+            text-decoration: underline overline;
+        }
+
+        .underline-line {
+            text-decoration: underline line-through;
+        }
+
+        .overline-line {
+            text-decoration: overline line-through;
+        }
+
+        .all-decor {
+            text-decoration: underline overline line-through;
+        }
+
+        #link {
+            text-decoration-line: underline;
+
+            text-decoration-style: wavy;
+
+            text-decoration-color: fuchsia;
+
+            text-decoration-thickness: 2px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="head">This is my text</h1>
+
+    <p class="line-through">This text has line-through.</p>
+    <p class="underline">This text is underlined.</p>
+    <p class="overline">This text has overline.</p>
+    <p class="underline-overline">This text has underline & overline.</p>
+    <p class="underline-line">This text has underline & line-through.</p>
+    <p class="overline-line">This text has overline & line-through.</p>
+    <p class="all-decor">This text has underline, overline & line-through.</p>
+
+    <a id="link" href="#">This is a styled link</a>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Align & Var-Calc Example</title>
+    <style type="text/css">
+      
+        :root {
+            --box-size: 120px;
+            --box-color: yellowgreen;
+            --text-align: center;
+        }
+
+        /* Box with var() & calc() */
+        #box1 {
+            height: var(--box-size);
+            width: calc(var(--box-size) + 80px);
+            /* 120px + 80px = 200px */
+            background-color: var(--box-color);
+            text-align: var(--text-align);
+            line-height: var(--box-size);
+            color: white;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .left {
+            text-align: left;
+            background: lightcoral;
+            padding: 10px;
+        }
+
+        .right {
+            text-align: right;
+            background: lightblue;
+            padding: 10px;
+        }
+
+        .center {
+            text-align: center;
+            background: lightgreen;
+            padding: 10px;
+        }
+
+        .justify {
+            text-align: justify;
+            background: lightyellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">This is a box (var + calc)</div>
+
+    <p class="left">This text is aligned to the LEFT.</p>
+    <p class="right">This text is aligned to the RIGHT.</p>
+    <p class="center">This text is aligned to the CENTER.</p>
+    <p class="justify">
+        This text is aligned to the JUSTIFY. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        It spreads evenly across the container width.
+    </p>
+</body>
+
+</html>
