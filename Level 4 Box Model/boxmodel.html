@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Box Model Full Border Demo</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+
+            /* ✅ ACTIVE PROPERTY */
+            padding: 20px;
+
+            /*COMMENTED BORDER PROPERTIES */
+
+            /* border-width: 4px; */
+            /* border-style: solid; */
+            /* border-color: red; */
+            /* border-top: 4px dashed green; */
+            /* border-right: 4px dotted blue; */
+            /* border-bottom: 4px double orange; */
+            /* border-left: 4px groove purple; */
+
+            /* margin: 30px; */
+            /* box-sizing: border-box; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">This box uses only padding</div>
+
+</body>
+
+</html>
+
+
+
+                                       <!--    +------------------------------+ ← Margin (30px)
+                                               |                              |
+                                               |  +------------------------+  | ← Border (4px)
+                                               |  |   +------------------+ |  | ← Padding (20px)
+                                               |  |   |  Your Content    | |  |
+                                               |  |   +------------------+ |  |
+                                               |  +------------------------+  |
+                                               |                              |
+                                               +------------------------------+   -->
