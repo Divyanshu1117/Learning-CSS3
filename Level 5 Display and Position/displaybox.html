@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        height: 100px;
+        width: 100px;
+        margin: 5px;
+        background-color: olivedrab;
+
+        /*display: block;/*Block elements start on a new line and occupy full width by default.*/
+        /*display: inline;/* Width and height only apply to inline elements if their display is set to 'inline-block' or 'block' */
+        /*display: inline-block;*/
+        /*Inline-block elements stay inline with other content but accept width and height like block elements.*/
+    }
+
+    #box1 {
+        /*visibility: hidden;*/
+        display: none;
+        /* Hides the element completely — it will not be visible and will not occupy any space on the page */
+
+    }
+</style>
+
+<body>
+    <div id="box1" class="box">Box 1</div>
+    <div id="box2" class="box">Box 2</div>
+</body>
+
+</html>
