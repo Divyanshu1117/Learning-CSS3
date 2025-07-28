@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    nav a {
+        text-decoration: none;
+        margin-left: 55px;
+        padding: 5px;
+
+    }
+
+    header {
+        background-color: palegreen;
+        height: 30px;
+    }
+
+    #second {
+        height: 50px;
+        width: 50px;
+        background-color: green;
+        border-radius: 50%;
+    }
+
+    .box {
+        height: 100px;
+        width: 100px;
+        margin: 5px;
+        background-color: violet;
+    }
+
+    #box2 {
+        z-index: 2;
+        position: absolute;
+        left: 20px;
+    }
+
+    #container {
+        border: 5px solid;
+        margin: 5px;
+    }
+
+    #box4 {
+        position: fixed;
+        right: 10px;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0px;
+        background-color: mediumaquamarine;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <a href="#"> Home </a>
+            <a href="#"> Products </a>
+            <a href="#"> Contact </a>
+            <a href="#"> Help </a>
+        </nav>
+    </header>
+    <main>
+        <div id="second">Second</div>
+        <div id="container">
+            <div id="box1" class="box">Box 1</div>
+            <div id="box2" class="box">Box 2</div>
+            <div id="box3" class="box">Box 3</div>
+        </div>
+        <div id="box4" class="box">Box 4</div>
+    </main>
+    <footer>
+        &copy; 2025 MyWebsite. All rights reserved.
+    </footer>
+</body>
+
+</html>
