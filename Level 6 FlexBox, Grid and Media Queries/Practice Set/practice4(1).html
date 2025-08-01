@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        height: 25px;
+        padding-top: 5px;
+    }
+
+    header {
+        background-color: moccasin;
+    }
+
+    img {
+        height: 100px;
+    }
+
+    #image_container {
+        border: 2px solid black;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #box_container {
+        border: 2px solid black;
+        display: flex;
+        height: 80px;
+        width: 400px;
+        justify-content: space-around;
+    }
+
+    #box2 {
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    .box {
+        height: 75px;
+        width: 75px;
+        border: 2px solid red;
+        flex-shrink: 0;
+    }
+
+    #media_box {
+        height: 50px;
+        width: 50px;
+        background-color: darkseagreen;
+        border: 2px solid black;
+    }
+
+    @media screen and (min-width: 400px) {
+        #media_box {
+            background-color: blue;
+
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Support</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div id="image_container">
+            <img src="God.png" alt="God Picture">
+        </div>
+        <div id="box_container">
+            <div id="box1" class="box">Box 1</div>
+            <div id="box2" class="box">Box 2</div>
+            <div id="box3" class="box">Box 3</div>
+        </div>
+        <br><br>
+        <hr>
+        <div id="media_box">Media Box</div>
+    </main>
+</body>
+
+</html>
